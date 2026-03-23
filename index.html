@@ -1,10 +1,326 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Site</title>
+  <meta charset="UTF-8">
+  <title>Vi & Abhishek for ECESS Presidents</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --ubc-blue: #002145;
+      --campaign-blue: #0038A7;
+      --campaign-gold: #FBD016;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: var(--ubc-blue);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,56,167,0.75), rgba(0,56,167,0.75)),
+                  url('images/main.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 140px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-weight: 700;
+      font-size: 3rem;
+    }
+
+    .hero h3 {
+      color: var(--campaign-gold);
+    }
+
+    .btn-gold {
+      background-color: var(--campaign-gold);
+      border: none;
+      color: black;
+      font-weight: 600;
+    }
+
+    .btn-gold:hover {
+      background-color: #e6b800;
+    }
+
+    .section {
+      padding: 70px 20px;
+    }
+
+    .section-title {
+      font-weight: 700;
+      color: var(--campaign-blue);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .highlight {
+      color: var(--campaign-blue);
+      font-weight: 600;
+    }
+
+    .vision {
+      background-color: var(--campaign-blue);
+      color: white;
+      text-align: center;
+    }
+
+    .vision h2 {
+      color: var(--campaign-gold);
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+    }
+
+    /* Meet Us Portraits */
+    .profile-card {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: auto;
+      max-height: 250px;
+      border-radius: 15px;
+      border: 3px solid var(--campaign-gold);
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my GitHub Pages site.</p>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Vi & Abhishek for ECE Presidents</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#platform">Platform</a></li>
+        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>We're Vi & Abhishek</h1>
+    <h3>We've done the work, now we're gonna go bigger.</h3>
+    <p class="lead mt-4">
+      From running events to rebuilding traditions and navigating funding cuts - we've been behind the scenes making ECE better. Now we're ready to take it further.
+    </p>
+    <a href="#platform" class="btn btn-gold btn-lg mt-4">Explore Our Platform</a>
+  </div>
+</section>
+
+<!-- Meet Us 
+<section class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">About Us</h2>
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-md-5 profile-card">
+        <img src="images/abhi.jpg" alt="Abhishek" class="profile-img">
+        <h4>Abhishek Raghuwanshi</h4>
+        <p>
+          Hey! I'm Abhishek, your current ECESS VP Finance. I've spent the last few years
+          organizing events, reviving traditions, keeping our finances in check and getting as many people involved
+          in ECE as possible. I care a lot about making ECE a community people
+          actually want to be part of.
+        </p>
+      </div>
+
+      <div class="col-md-5 profile-card">
+        <img src="images/vi.jpg" alt="Vi" class="profile-img">
+        <h4>Vi Kankanamge</h4>
+        <p>
+          Heyo! I'm Vi, your current ECESS President. I've worked on initiatives
+          like the ECE Job Fair, Seattle career trip, and student-wide resources
+          to support both professional growth and community. I also enjoy reading, crocheting, and discussing philosophy!
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+
+<!-- Platform -->
+<section id="platform" class="section">
+  <div class="container">
+    <h2 class="section-title">Our Platform</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card p-4">
+          <h4 class="highlight">Professional Growth</h4>
+          <p>
+            Expand career opportunities, strengthen industry connections,
+            and start an actual ECE student-alumni network that can actually help.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <h4 class="highlight">Student Life & Spirit</h4>
+          <p>
+            Gonna go harder than ever for E-Week, and organize more traditions and events people actually
+            want to show up to!
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-4">
+          <h4 class="highlight">Transparent Advocacy</h4>
+          <p>
+            Clear communication, real representation, and stronger connections
+            between students and the department.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Events -->
+<section id="events" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">What We've Done in our past ECESS roles</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/seattle.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Seattle Career Trip - Vi</h5>
+            <p>Organized a trip connecting ECE students with US-based industry opportunities.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/careerfair.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>ECESS + IEEE Career Fair - Vi</h5>
+            <p>Started a successful ECE career fair helping students land jobs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/resistor.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Resistor Racing Revival - Abhishek</h5>
+            <p>Brought back one of ECE’s most iconic traditions by connecting with alumni from the 80s.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/white_lies.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Sports & Events - Abhishek</h5>
+            <p>Revived ECE intramurals, and organized events like the first White Lies party, 2 Red 2 Knight and "Touch grass".</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="section">
+  <div class="container">
+    <h2 class="section-title">Why We’re Ready</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h4>Vi</h4>
+          <ul>
+            <li>Current ECESS President</li>
+            <li>Past VP External and 3rd year rep</li>
+            <li>Led major initiatives and advocacy</li>
+            <li>Created career & networking opportunities</li>
+            <li>4+ years of ECESS experience</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-4">
+          <h4>Abhishek</h4>
+          <ul>
+            <li>Current VP Finance (while on co-op)</li>
+            <li>Past VP Student Life and 2nd year rep</li>
+            <li>Led events, revived traditions, and student life</li>
+            <li>Strong experience in finance & operations</li>
+            <li>Deep involvement across ECE, EUS, and student community</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vision -->
+<section id="vision" class="section vision">
+  <div class="container">
+    <h2>Our Vision</h2>
+    <p class="lead mt-4">
+      More career support. More spirit. More transparency. Better advocacy.
+    </p>
+    <p>
+      We've already built momentum, and now we'll take it further.
+    </p>
+    <h3 class="mt-5">Vote Vi & Abhishek for ECESS Presidents</h3>
+    <a href="https://instagram.com/abhishekvi4prez" class="btn btn-gold btn-lg mt-3">
+      Follow Our Campaign on Instagram!
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center p-3">
+  <p>© 2026 Vi & Abhishek Campaign</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
